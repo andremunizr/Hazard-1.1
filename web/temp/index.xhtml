@@ -222,7 +222,10 @@
                             <h:form>
                                 <p:inputText size="80" styleClass="input-standard" />
                                 <h:commandButton styleClass="action-button search-button" value="pesquisar"/>
-                                <div class="titles voce-sabia">Você sabia?</div>
+                                <div class="titles voce-sabia">
+                                    <h:commandLink value="Você sabia?"
+                                           action="dicas.xhtml?faces-redirect=true" />
+                                </div>
                                 <div class="hint-container">
                                     <div class="hint-box">
                                         Na Argélia o sol é visto com os olhos, segundo estudos.

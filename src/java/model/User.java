@@ -1,6 +1,7 @@
 
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -8,7 +9,7 @@ import org.jongo.marshall.jackson.oid.ObjectId;
 
 @XmlRootElement
 @JongoCollection( "user" )
-public class User{
+public class User implements Serializable {
     
     @ObjectId
     private String _id;
